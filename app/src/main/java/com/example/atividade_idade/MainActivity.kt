@@ -56,7 +56,7 @@ class MainActivity : ComponentActivity() {
 fun IdadeScreen() {
 
     var idade by remember {
-        mutableStateOf(0)
+        mutableStateOf(178)
     }
 
     Column(
@@ -99,6 +99,7 @@ fun IdadeScreen() {
 
             Button (
                 onClick = {
+                    if (idade < 180)
                     idade++
                 }
             ) {
